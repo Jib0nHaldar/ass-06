@@ -1,12 +1,12 @@
-import Banner from "@/components/Banner";
+import Banner from "@/components/homepage/Banner";
+import FitCard from "@/components/homepage/FitCard";
 
 
 export default function Home() {
   return (
     <>
-      <h2>Homepage</h2>
-      <p>This is Homepage content</p>
       <Banner />
+      <FitCard/>
     </>
   );
 }
