@@ -51,7 +51,7 @@ const Navbar = () => {
             {/* Navigation */}
             <div className="hidden items-center gap-8 md:flex">
                 <Link
-                    href="/workout"
+                    href="/"
                     className="rounded-full px-4 py-2 text-sm font-semibold tracking-wider text-white transition-colors hover:bg-[#C2F800]/10 hover:text-[#C2F800]"
                 >
                     Workout
