@@ -34,7 +34,6 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
 
             <div className="mx-auto max-w-7xl">
 
-                {/* Back Button */}
                 <Link
                     href="/"
                     className="mb-5 inline-block text-sm text-gray-400 transition hover:text-[#C2F800]"
@@ -42,10 +41,9 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
                  Back to workouts
                 </Link>
 
-                {/* Main Details Container */}
                 <div className="grid gap-8 lg:grid-cols-[1fr_1.05fr]">
 
-                    {/* ================= IMAGE ================= */}
+
 
                     <div className="relative h-[550px] overflow-hidden rounded-2xl lg:h-[700px]">
 
@@ -61,23 +59,18 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
                     </div>
 
 
-                    {/* ================= CONTENT ================= */}
 
                     <div className="flex flex-col">
 
-                        {/* Title */}
                         <h1 className="text-4xl font-bold uppercase tracking-wide sm:text-5xl">
                             {fitDetails.name}
                         </h1>
 
-
-                        {/* Description */}
                         <p className="mt-3 max-w-2xl text-base leading-6 text-gray-300">
                             {fitDetails.description}
                         </p>
 
 
-                        {/* Muscle Tags */}
                         <div className="mt-4 flex flex-wrap gap-2">
 
                             {fitDetails.muscleGroups?.map(
@@ -94,11 +87,9 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
                         </div>
 
 
-                        {/* ================= STATS ================= */}
 
                         <div className="mt-5 overflow-hidden rounded-2xl border border-[#292c33] bg-[#1a1d22]">
 
-                            {/* Equipment */}
                             <div className="grid grid-cols-2 border-b border-[#292c33] px-4 py-4">
 
                                 <span className="text-xs font-bold uppercase tracking-wide text-white">
@@ -112,7 +103,6 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
                             </div>
 
 
-                            {/* Difficulty */}
                             <div className="grid grid-cols-2 border-b border-[#292c33] px-4 py-4">
 
                                 <span className="text-xs font-bold uppercase tracking-wide">
@@ -126,7 +116,6 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
                             </div>
 
 
-                            {/* Sets */}
                             <div className="grid grid-cols-2 border-b border-[#292c33] px-4 py-4">
 
                                 <span className="text-xs font-bold uppercase tracking-wide">
@@ -139,8 +128,6 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
 
                             </div>
 
-
-                            {/* Reps */}
                             <div className="grid grid-cols-2 border-b border-[#292c33] px-4 py-4">
 
                                 <span className="text-xs font-bold uppercase tracking-wide">
@@ -153,8 +140,6 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
 
                             </div>
 
-
-                            {/* Duration */}
                             <div className="grid grid-cols-2 border-b border-[#292c33] px-4 py-4">
 
                                 <span className="text-xs font-bold uppercase tracking-wide">
@@ -168,7 +153,6 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
                             </div>
 
 
-                            {/* Calories */}
                             <div className="grid grid-cols-2 border-b border-[#292c33] px-4 py-4">
 
                                 <span className="text-xs font-bold uppercase tracking-wide">
@@ -182,7 +166,6 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
                             </div>
 
 
-                            {/* Rating */}
                             <div className="grid grid-cols-2 px-4 py-4">
 
                                 <span className="text-xs font-bold uppercase tracking-wide">
@@ -198,7 +181,6 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
                         </div>
 
 
-                        {/* ================= INSTRUCTIONS ================= */}
 
                         <div className="mt-7">
 
@@ -222,7 +204,6 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
                         </div>
 
 
-                        {/* ================= BUTTONS ================= */}
 
                         {/* <div className="mt-6 flex flex-wrap gap-3">
 
