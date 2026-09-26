@@ -19,7 +19,7 @@ const FitCard = async () => {
     console.log(fitData, "Data");
 
     return (
-        <section className="my-8 px-5 md:px-10 lg:px-20">
+        <section id="fitCard" className="my-8 px-5 md:px-10 lg:px-20">
             {/* Header */}
             <div className="mb-8">
                 <h2 className="mb-2 text-3xl font-bold">
@@ -37,7 +37,7 @@ const FitCard = async () => {
                     <div
                         key={item.id}
                         className="group overflow-hidden rounded-2xl bg-[#15171D] shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-                            
+
                         <div className="relative h-56 overflow-hidden">
                             <Image
                                 src={item.image}
@@ -115,6 +115,7 @@ const FitCard = async () => {
                 ))}
             </div>
         </section>
+
     );
 };
 
