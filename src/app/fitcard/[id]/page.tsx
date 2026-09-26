@@ -47,11 +47,12 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
 
                     {/* ================= IMAGE ================= */}
 
-                    <div className="relative h-[500px] overflow-hidden rounded-2xl lg:h-[700px]">
+                    <div className="relative h-[550px] overflow-hidden rounded-2xl lg:h-[700px]">
 
                         <Image
+
                             src={fitDetails.image}
-                            alt={fitDetails.title}
+                            alt={fitDetails.name}
                             fill
                             priority
                             className="object-cover"

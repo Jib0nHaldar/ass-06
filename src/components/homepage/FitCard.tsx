@@ -1,5 +1,6 @@
 import { Workout } from "@/type/type";
 import Image from "next/image";
+import Link from "next/link";
 
 const getWorkouts = async (): Promise<Workout[]> => {
     const response = await fetch("https://api.abcz.workers.dev/api/fitlog");
@@ -103,12 +104,12 @@ const FitCard = async () => {
 
                             </div>
 
-                            <button
-                                type="button"
-                                className="mt-5 w-full rounded-xl bg-[#C2F800] px-4 py-3 text-sm font-bold text-black transition-all duration-200 hover:bg-[#d4ff33] active:scale-[0.98]"
+                            <Link
+                                href={`/fitcard/${item.id}`}
+                                className="mt-5 block w-full rounded-xl bg-[#C2F800] px-4 py-3 text-center text-sm font-bold text-black transition-all duration-200 hover:bg-[#d4ff33] active:scale-[0.98]"
                             >
                                 VIEW DETAILS →
-                            </button>
+                            </Link>
 
                         </div>
                     </div>

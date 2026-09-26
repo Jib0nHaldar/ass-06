@@ -7,20 +7,23 @@ function Badge({
     label,
     count,
     color,
+    href,
 }: {
     label: string;
     count: number;
     color: 'blue' | 'green';
+    href: string;
 }) {
     return (
-        <span
+        <Link
+            href={href}
             className={`rounded-full px-3 py-1 text-xs font-semibold ${color === 'blue'
                 ? 'bg-blue-100 text-blue-700'
                 : 'bg-green-100 text-green-700'
                 }`}
         >
             {label}: {count}
-        </span>
+        </Link>
     );
 }
 
@@ -31,7 +34,6 @@ const Navbar = () => {
     return (
         <nav className="flex items-center justify-between border-b border-gray-200 px-6 py-4 shadow-sm md:px-10">
 
-            {/* Logo and Website Name */}
             <Link
                 href="/"
                 className="flex items-center gap-2 transition-opacity hover:opacity-80"
@@ -48,8 +50,8 @@ const Navbar = () => {
                 </h2>
             </Link>
 
-            {/* Navigation */}
-            <div className="hidden items-center gap-8 md:flex">
+
+            <div className="hidden items-center gap-1 md:flex">
                 <Link
                     href="/"
                     className="rounded-full px-4 py-2 text-sm font-semibold tracking-wider text-white transition-colors hover:bg-[#C2F800]/10 hover:text-[#C2F800]"
@@ -65,18 +67,18 @@ const Navbar = () => {
                 </Link>
             </div>
 
-            {/* Badges */}
             <div className="flex items-center gap-2">
                 <Badge
                     label="Plan"
                     count={planCount}
                     color="blue"
+                    href="/myplan"
                 />
 
                 <Badge
-                    label="Saved"
-                    count={savedCount}
+                    label="Saved"                    count={savedCount}
                     color="green"
+                    href="/myplan"
                 />
             </div>
 
