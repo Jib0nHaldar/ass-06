@@ -1,3 +1,4 @@
+import TodayButton from "@/components/todaysPlan/TodayButton";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -198,12 +199,8 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
 
 
                         <div className="mt-5 flex flex-wrap gap-8">
-                            <button
-                                className="rounded-xl bg-[#C2F800] px-3 py-2 text-sm font-medium text-black transition hover:scale-105 hover:bg-[#d4ff33]"
-                            >
-                                Add to Today&apos;s plan
-                            </button>
-
+                     
+                                <TodayButton />
 
                             <button
                                 className="rounded-xl border border-gray-400 px-3 py-2 text-sm font-medium text-white transition hover:border-[#C2F800] hover:text-[#C2F800]"
