@@ -17,10 +17,6 @@ export const getDetails = async (id: string) => {
         }
     );
 
-    if (!res.ok) {
-        throw new Error("Failed to fetch workout details");
-    }
-
     return res.json();
 };
 
@@ -62,11 +58,11 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
 
                     <div className="flex flex-col">
 
-                        <h1 className="text-4xl font-bold uppercase tracking-wide sm:text-5xl">
+                        <h1 className="text-4xl font-semibold uppercase tracking-wide sm:text-4xl">
                             {fitDetails.name}
                         </h1>
 
-                        <p className="mt-3 max-w-2xl text-base leading-6 text-gray-300">
+                        <p className="mt-3 max-w-xl text-sm leading-6 text-gray-300">
                             {fitDetails.description}
                         </p>
 
@@ -86,11 +82,10 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
 
                         </div>
 
-
-
+                        {/* Grid boxes */}
                         <div className="mt-5 overflow-hidden rounded-2xl border border-[#292c33] bg-[#1a1d22]">
 
-                            <div className="grid grid-cols-2 border-b border-[#292c33] px-4 py-4">
+                            <div className="grid grid-cols-2 border-b border-[#292c33] px-4 py-3">
 
                                 <span className="text-xs font-bold uppercase tracking-wide text-white">
                                     Equipment
@@ -102,8 +97,7 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
 
                             </div>
 
-
-                            <div className="grid grid-cols-2 border-b border-[#292c33] px-4 py-4">
+                            <div className="grid grid-cols-2 border-b border-[#292c33] px-4 py-3">
 
                                 <span className="text-xs font-bold uppercase tracking-wide">
                                     Difficulty
@@ -115,8 +109,7 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
 
                             </div>
 
-
-                            <div className="grid grid-cols-2 border-b border-[#292c33] px-4 py-4">
+                            <div className="grid grid-cols-2 border-b border-[#292c33] px-4 py-3">
 
                                 <span className="text-xs font-bold uppercase tracking-wide">
                                     Sets
@@ -128,7 +121,7 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
 
                             </div>
 
-                            <div className="grid grid-cols-2 border-b border-[#292c33] px-4 py-4">
+                            <div className="grid grid-cols-2 border-b border-[#292c33] px-4 py-3">
 
                                 <span className="text-xs font-bold uppercase tracking-wide">
                                     Reps
@@ -140,7 +133,7 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
 
                             </div>
 
-                            <div className="grid grid-cols-2 border-b border-[#292c33] px-4 py-4">
+                            <div className="grid grid-cols-2 border-b border-[#292c33] px-4 py-3">
 
                                 <span className="text-xs font-bold uppercase tracking-wide">
                                     Duration
@@ -153,7 +146,7 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
                             </div>
 
 
-                            <div className="grid grid-cols-2 border-b border-[#292c33] px-4 py-4">
+                            <div className="grid grid-cols-2 border-b border-[#292c33] px-4 py-3">
 
                                 <span className="text-xs font-bold uppercase tracking-wide">
                                     Calories
@@ -165,8 +158,7 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
 
                             </div>
 
-
-                            <div className="grid grid-cols-2 px-4 py-4">
+                            <div className="grid grid-cols-2 px-4 py-3">
 
                                 <span className="text-xs font-bold uppercase tracking-wide">
                                     Rating
@@ -182,14 +174,14 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
 
 
 
-                        <div className="mt-7">
+                        <div className="mt-5">
 
-                            <h2 className="text-2xl font-bold uppercase">
+                            <h2 className="text-xl font-bold uppercase">
                                 Instructions
                             </h2>
 
 
-                            <ol className="mt-4 space-y-3 text-sm leading-6 text-gray-200">
+                            <ol className="mt-2 space-y-1 text-sm leading-6 text-gray-200">
 
                                 {fitDetails.instructions?.map(
                                     (instruction: string, index: number) => (
@@ -205,22 +197,21 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
 
 
 
-                        {/* <div className="mt-6 flex flex-wrap gap-3">
-
+                        <div className="mt-5 flex flex-wrap gap-3">
                             <button
-                                className="rounded-xl bg-[#C2F800] px-5 py-3 text-sm font-medium text-black transition hover:scale-105 hover:bg-[#d4ff33]"
+                                className="rounded-xl bg-[#C2F800] px-3 py-2 text-sm font-medium text-black transition hover:scale-105 hover:bg-[#d4ff33]"
                             >
-                                ＋ Add to today's plan
+                                Add to Today's plan
                             </button>
 
 
                             <button
-                                className="rounded-xl border border-gray-400 px-5 py-3 text-sm font-medium text-white transition hover:border-[#C2F800] hover:text-[#C2F800]"
+                                className="rounded-xl border border-gray-400 px-3 py-2 text-sm font-medium text-white transition hover:border-[#C2F800] hover:text-[#C2F800]"
                             >
-                                ♧ Save for later
+                                Save for later
                             </button>
 
-                        </div> */}
+                        </div>
 
                     </div>
 
