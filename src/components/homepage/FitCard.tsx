@@ -17,8 +17,6 @@ const getWorkouts = async (): Promise<Workout[]> => {
 const FitCard = async () => {
     const fitData = await getWorkouts();
 
-    console.log(fitData, "Data");
-
     return (
         <section id="fitCard" className="my-8 px-5 md:px-10 lg:px-20">
             {/* Header */}

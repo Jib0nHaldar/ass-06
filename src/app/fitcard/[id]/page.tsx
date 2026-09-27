@@ -41,7 +41,7 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
 
 
 
-                    <div className="relative h-[550px] overflow-hidden rounded-2xl lg:h-[700px]">
+                    <div className="relative h-137.5 overflow-hidden rounded-2xl lg:h-178.75">
 
                         <Image
 
@@ -174,14 +174,14 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
 
 
 
-                        <div className="mt-5">
+                        <div className="mt-6">
 
                             <h2 className="text-xl font-bold uppercase">
                                 Instructions
                             </h2>
 
 
-                            <ol className="mt-2 space-y-1 text-sm leading-6 text-gray-200">
+                            <ol className="mt-3 space-y-2 text-sm leading-6 text-gray-200">
 
                                 {fitDetails.instructions?.map(
                                     (instruction: string, index: number) => (
@@ -197,11 +197,11 @@ const DetailsPage = async ({ params }: DetailsPageProps) => {
 
 
 
-                        <div className="mt-5 flex flex-wrap gap-3">
+                        <div className="mt-5 flex flex-wrap gap-8">
                             <button
                                 className="rounded-xl bg-[#C2F800] px-3 py-2 text-sm font-medium text-black transition hover:scale-105 hover:bg-[#d4ff33]"
                             >
-                                Add to Today's plan
+                                Add to Today&apos;s plan
                             </button>
 
 

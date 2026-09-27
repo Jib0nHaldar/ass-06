@@ -7,13 +7,21 @@ const MyPlanpage = () => {
 
                 {/* Header */}
                 <div className="mb-10">
-                    <h1 className="text-4xl font-black tracking-wider md:text-5xl">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold uppercase tracking-wide">
                         MY PLAN
                     </h1>
 
                     <p className="mt-3 text-sm text-gray-400 md:text-base">
                         Cap of five lifts for today. Finish them, then load more.
                     </p>
+                </div>
+
+                <div>
+                    {/* Grid boxes */}
+                        <div className="mt-5 overflow-hidden rounded-2xl border border-[#292c33] bg-[#1a1d22]">
+
+                            <div className="grid grid-cols-3 border-b border-[#292c33] px-10 py-10"></div>
+                        </div>
                 </div>
             </div>
         </main>

@@ -5,26 +5,29 @@ import Link from 'next/link';
 
 const Banner = () => {
     return (
-        <section className="flex flex-col mx-auto md:flex-row items-center justify-between gap-10 rounded-4xl bg-[#15171D] px-8 py-12 my-12 md:px-16 lg:px-20 text-white overflow-hidden">
+        <section className="mx-auto my-12 flex max-w-7xl flex-col items-center justify-between gap-10 overflow-hidden rounded-4xl bg-[#15171D] px-8 py-12 text-white md:flex-row md:px-16 lg:px-20">
 
 
             <div className="flex flex-col gap-5 max-w-2xl">
 
 
-                <span className="w-fit rounded-full border border-[#C2F800]/30 bg-[#C2F800]/10 px-4 py-2 text-sm font-semibold tracking-wider text-[#C2F800]">
+
+                <span className="w-fit rounded-full border border-[#C2F800]/30 bg-[#C2F800]/10 px-4 py-2 text-sm font-medium tracking-wider text-[#C2F800]">
                     WORKOUT LIBRARY
                 </span>
 
 
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+
+
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight tracking-tight">
                     TRAIN WITH INTENT.
                     <br />
                     LOG EVERY SET.
                 </h2>
 
                 <p className="max-w-xl text-base md:text-lg leading-relaxed text-gray-300">
-                    FitLog is a dark, no-nonsense gym companion: pick a lift,
-                    lock it into today's plan, and watch the week's work add up.
+                    FitLog is a dark, no-nonsense gym companion: pick a lift, <br />
+                    lock it into today's plan, and watch the week's work add <br /> up.
                 </p>
 
                 <Link
